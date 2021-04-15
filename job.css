@@ -1,0 +1,148 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    border-radius: 2px;
+}
+
+body
+{
+   font-family: 'Noto sans','sans-serif';
+   background-color: #eee;
+}
+nav{
+    background-color: #283e4a;
+    padding: 0px 32px;
+    height: 52px;
+    box-shadow: none;
+
+}
+
+.navimg{
+    width:30px;
+    height: 30px;
+    /*margin-left:24px;*/
+}
+a{
+    color: #666;
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+    border-right: 2px;
+    padding-right: 32px;
+    /*border-color: #666;*/
+   
+    margin-right:64px;
+    border-right: 1px solid #ccc;
+
+}
+a:hover
+{
+  text-decoration: underline;
+}
+
+section
+{
+    background-color: #fff;
+    padding: 16px;
+    margin:16px 0;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+
+}
+.mp 
+{
+    margin:16px 64px;
+}
+
+.searchbar
+{
+    background-color: #ecf2f4;    
+   padding: 32px;
+    text-align: center;
+    border-radius:8px;
+}
+.searchbarheader
+{
+    font-size: 24px;
+    color:#222;
+    font-weight: 300;
+    
+}
+.search_input
+{
+    font-size:16px;
+    padding: 8px;
+    width:40%;
+    margin-right:8px;
+    border:1px solid #ccc;
+}
+.search_button{
+    font-size:16px;
+    font-weight:bold;
+    color:white;
+    background-color: #0073b1;
+    padding:8px 16px;
+    border-radius:4px;
+}
+.listings
+{
+    border-radius: 8px;
+}
+.listingsh2
+{
+    font-size: 16px;
+}
+.listingsgrid
+{
+    list-style: none;
+ margin-top: 16px;
+
+    display: grid;
+    grid-template-columns: 250px 250px 250px 250px;
+    grid-column-gap:8px;
+    grid-row-gap:16px;
+}
+.card 
+{
+    border: 1px solid #ccc;
+    padding: 16px;
+    width:250px;
+    border-radius: 2px;
+}
+.
+.cardimg
+{
+    width:64px;
+    height: 64px;
+    margin-left: 8px 8px; 
+}
+
+.cardh {
+    font-size: 16px;
+    font-weight: bold ;
+    color:#222;
+    line-height: 2;
+
+}
+
+.cardtext
+{
+    font-size:14px;
+    color:#666;
+    line-height: 1.5;
+}
+.cardsep
+{
+    border:1px solid #ccc;
+    margin:8px 0;
+    width:32px;
+}
+.cardtextsmall
+{
+   font-size: 12px;
+}
+.mt 
+{
+    margin-top: 32px;
+}
