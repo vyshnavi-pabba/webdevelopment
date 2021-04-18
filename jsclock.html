@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Digital clock</title>
+
+        <style type="text/css">
+          body{
+              background-color: black;
+          }
+         *
+         {
+            text-align: center;
+              font-family: fantasy;
+              font-size: 40px;
+              color: darkturquoise;
+         }
+         .h1
+         {
+             font-weight: bold;
+         }
+          .clock
+          {
+              margin:230px;
+              padding: 30px;
+              
+              
+              box-sizing: border-box;
+              border: 1px solid seashell;
+              border-radius: 4px;
+          }
+         
+        </style>
+    </head>
+    <body>
+        <h1> DIGITAL CLOCK</h1>
+        <section class="clock">
+           
+            <div id="MyClockDisplay">
+                
+                <script type="text/javascript">
+                      
+        
+                      function showTime()
+                      {
+                        
+                          var date=new Date();
+                          //var h=date.getHours();
+                          var hr=date.getHours();
+                          var m=date.getMinutes();
+                          var s=date.getSeconds();
+                          var ses;
+                          if(hr>=0 && hr<12)
+                          {
+                              ses="AM";
+                          }
+                          else 
+                          {
+                              hr=hr-12;
+                              ses="PM";
+                          }
+        
+                          hr= (hr<10) ? "0"+ hr :hr;
+                          m= (m<10) ? "0"+ m :m;
+                          s= (s<10) ? "0"+ s :s;
+        
+                          var time= hr + ":" + m + ":" +s +" "+ ses;
+                        document.getElementById("MyClockDisplay").innerHTML =time;
+                       //   document.getElementById("MyClockDisplay").textContent =time;
+        
+                          setTimeout(showTime,1000);
+                          //setinterval method calls the given method as specified time 
+                          //set timeout will call yhe methpod once the time is out
+                      }
+                      showTime();
+                     
+                      
+                </script>
+                </div>
+
+
+
+
+        </section>
+        
+    </body>
+
+</html>
